@@ -1,7 +1,7 @@
 package com.mundet.mvp_kotlin.root
 
 import android.app.Application
-import com.mundet.mvp_kotlin.Login.LoginModule
+import com.mundet.mvp_kotlin.Main.Module.MainModule
 
 
 class App : Application() {
@@ -14,7 +14,7 @@ class App : Application() {
         super.onCreate()
         component = DaggerApplicationComponent.builder()
             .applicationModule(ApplicationModule(this))
-            .loginModule(LoginModule())
+            .mainModule(MainModule())
             .build()
 
     }

@@ -1,9 +1,9 @@
-package com.mundet.mvp_kotlin.Login
+package com.mundet.mvp_kotlin.Main.Repositorys
 
 import android.graphics.Movie
 
 
-class MemoryRepository : LoginRepository {
+class MemoryRepository : MainRepository {
 
     private var user: Movie? = null
 

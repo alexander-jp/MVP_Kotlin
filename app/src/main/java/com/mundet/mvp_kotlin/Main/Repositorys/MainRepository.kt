@@ -1,9 +1,9 @@
-package com.mundet.mvp_kotlin.Login
+package com.mundet.mvp_kotlin.Main.Repositorys
 
 import android.graphics.Movie
 
 
-interface LoginRepository {
+interface MainRepository {
 
     val movie: Movie
 

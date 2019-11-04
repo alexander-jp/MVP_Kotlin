@@ -1,16 +1,18 @@
-package com.mundet.mvp_kotlin.Login
+package com.mundet.mvp_kotlin.Main.Views
 
-import android.app.Application
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.mundet.mvp_kotlin.Main.Interfaces.MainActivityPresenter
+import com.mundet.mvp_kotlin.Main.Interfaces.MainActivityView
 import com.mundet.mvp_kotlin.R
 import com.mundet.mvp_kotlin.root.App
 import javax.inject.Inject
 
-open class LoginActivity : AppCompatActivity(), LoginActivityMPV.View {
+open class MainActivity : AppCompatActivity(),
+    MainActivityView {
 
     @Inject
-    lateinit var presenter: LoginActivityMPV.Presenter
+    lateinit var presenter: MainActivityPresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

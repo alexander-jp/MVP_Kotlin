@@ -1,4 +1,4 @@
-package com.mundet.mvp_kotlin.Login
+package com.mundet.mvp_kotlin.Main.Models
 
 class Movie() {
 
