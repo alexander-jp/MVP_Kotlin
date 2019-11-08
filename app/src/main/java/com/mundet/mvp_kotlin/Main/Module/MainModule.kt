@@ -19,7 +19,7 @@ class MainModule {
     }
 
     @Provides
-    fun provideMainActivityModel(repository: MainRepository): MainActivityInteractor {
+    fun provideMainActivityInteractor(repository: MainRepository): MainActivityInteractor {
         return MainActivityInteractorImpl(repository)
     }
 
